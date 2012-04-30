@@ -6,8 +6,4 @@ class FeedItem < ActiveRecord::Base
     Pusher['feed-updates'].trigger('new-item', self.to_json)
   end
 
-  def message
-    read_attribute(:message).html_safe
-  end
-
 end
