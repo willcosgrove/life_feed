@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Collegiate;
+  src: asset_url('collegiate.otf', fonts);
+  font-weight: 400;
+}
+
+.feed-item.github {
+  background-color: #FAFAFA;
+  margin-top: 20px;
+  padding: 0px;
+  header {
+    img {
+      border-radius: 50px;
+      float: left;
+      margin-right: 10px;
+    }
+    h1 {
+      font-family: Collegiate;
+      line-height: 48px;
+      small {
+        margin-left: 5px;
+      }
+    }
+    background: -webkit-linear-gradient(top, #FAFAFA, #EAEAEA);
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid #EEE;
+    border-bottom: 3px solid #CACACA;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .feed-item-inner {
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-top: none;
+    border-radius: 3px;
+  }
+}
