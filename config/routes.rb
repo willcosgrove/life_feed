@@ -1,6 +1,7 @@
 LifeFeed::Application.routes.draw do
   resources :feed_items
   match '/github' => 'feed_items#github'
+  match '/heroku' => 'feed_items#heroku'
   root to: 'feed_items#index'
 
   # The priority is based upon order of creation:

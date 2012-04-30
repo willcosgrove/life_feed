@@ -38,4 +38,15 @@ class FeedItemsController < ApplicationController
     @feed_item.save
     render nothing: true
   end
+
+  def heroku
+    app = params['app']
+    user = params['user']
+    url = params['url']
+    @feed_item = FeedItem.new(source: 'heroku')
+    @feed_item.title = "#{app} redeployed"
+    @feed_item.subtitle = "by #{user}"
+    @feed_item.message = "#{user} just deployed a new version of <a href='#{url}'>#{app}</a>"
+    @feed_item.save
+  end
 end
