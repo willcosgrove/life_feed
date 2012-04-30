@@ -27,9 +27,9 @@ class FeedItemsController < ApplicationController
   end
 
   def github
-    author = params['commits'][0]['author']['name']
-    repo_name = params['repository']['name']
-    commits = params['commits']
+    author = params['payload']['commits'][0]['author']['name']
+    repo_name = params['payload']['repository']['name']
+    commits = params['payload']['commits']
     @feed_item = FeedItem.new(source: 'github')
     @feed_item.title = "#{repo_name} updated"
     @feed_item.subtitle = "by #{author}"
