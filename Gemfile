@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'twitter-text'
 gem 'pusher'
 
 # To use ActiveModel has_secure_password

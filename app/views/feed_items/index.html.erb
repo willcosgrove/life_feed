@@ -7,7 +7,7 @@
           <h1><%= feed_item.title %><small><%= feed_item.subtitle %></small></h1>
         </header>
         <div class="feed-item-inner">
-          <%= feed_item.message.html_safe %>
+          <%= auto_link(feed_item.message.html_safe).html_safe %>
         </div>
       </article>
     </div>

@@ -1,0 +1,39 @@
+.feed-item.twitter_mention {
+  background-color: #C0DEED;
+  margin-top: 20px;
+  padding: 0px;
+  border-radius: 3px;
+  header {
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+    h1 {
+      color: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 48px;
+      small {
+        margin-left: 5px;
+        color: #4f4c72;
+      }
+    }
+    background-color: #00d9ff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00d9ff), to(#00b1d6));
+    background-image: -webkit-linear-gradient(top, #00d9ff, #00b1d6);
+    background-image: -moz-linear-gradient(top, #00d9ff, #00b1d6);
+    background-image: -o-linear-gradient(top, #00d9ff, #00b1d6);
+    background-image: -ms-linear-gradient(top, #00d9ff, #00b1d6);
+    background-image: linear-gradient(top, #00d9ff, #00b1d6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#00d9ff', EndColorStr='#00b1d6');
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 3px solid #0a80a7;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .feed-item-inner {
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
