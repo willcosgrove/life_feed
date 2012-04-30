@@ -7,5 +7,5 @@ jQuery ->
   pusher = new Pusher("ccc489e8bc03dd9208a3")
   channel = pusher.subscribe("feed-updates")
   channel.bind("new-item", (data)->
-    $('#feed-items').prepend(Mustache.to_html(feedItemTemplate, data))
+    $(Mustache.to_html(feedItemTemplate, data)).prependTo('#feed-items').hide().slideDown()
   )
