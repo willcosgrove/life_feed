@@ -1,7 +1,7 @@
 <div id="feed-items">
   <% @feed_items.each do |feed_item| %>
     <div class="row">
-      <article class="span6 offset3 feed-item github">
+      <article class="span8 offset2 feed-item github">
         <header>
           <%= image_tag "github.png" %>
           <h1><%= feed_item.title %><small><%= feed_item.subtitle %></small></h1>
@@ -16,7 +16,7 @@
 
 <script type="text/html" id="feed-item-template">
   <div class="row hidden">
-    <article class="span6 offset3 feed-item {{source}}">
+    <article class="span8 offset2 feed-item {{source}}">
       <header>
         <img src="/assets/{{source}}.png"/>
         <h1>{{title}}<small>{{subtitle}}</small></h1>
