@@ -27,6 +27,7 @@ class FeedItemsController < ApplicationController
   end
 
   def github
+    params['payload'] = JSON.parse(params['payload'])
     author = params['payload']['commits'][0]['author']['name']
     repo_name = params['payload']['repository']['name']
     commits = params['payload']['commits']
@@ -35,5 +36,6 @@ class FeedItemsController < ApplicationController
     @feed_item.subtitle = "by #{author}"
     @feed_item.message = "#{author} pushed #{help.pluralize(commits.size, 'new commit')} to #{repo_name}"
     @feed_item.save
+    render nothing: true
   end
 end
