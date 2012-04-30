@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Collegiate;
+  src: asset_url('collegiate.otf', fonts);
+  font-weight: 400;
+}
+
+.feed-item.heroku {
+  background-image: image_url('heroku-bg.png');
+  background-color: #1B1B24;
+  margin-top: 20px;
+  padding: 0px;
+  border-radius: 3px;
+  header {
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+    h1 {
+      color: #c9c3e6;
+      font-family: "CorbelRegular", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+      line-height: 48px;
+      small {
+        margin-left: 5px;
+        color: #4f4c72;
+      }
+    }
+    background-color: #29264D;
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 3px solid #494573;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .feed-item-inner {
+    color: #6D6A91;
+    padding: 10px;
+    border-radius: 3px;
+    a {
+      color: #9587EB;
+      &:hover {
+        text-decoration: none;
+        background: none;
+        color: rgb(166, 166, 255);
+        text-shadow: 0 0 6px rgba(120, 120, 255, .4);  
+      }
+    }
+  }
+}

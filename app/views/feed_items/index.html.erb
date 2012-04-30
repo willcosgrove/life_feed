@@ -1,13 +1,13 @@
 <div id="feed-items">
   <% @feed_items.each do |feed_item| %>
     <div class="row">
-      <article class="span8 offset2 feed-item github">
+      <article class="span8 offset2 feed-item <%= feed_item.source %>">
         <header>
-          <%= image_tag "github.png" %>
+          <%= image_tag "#{feed_item.source}.png" %>
           <h1><%= feed_item.title %><small><%= feed_item.subtitle %></small></h1>
         </header>
         <div class="feed-item-inner">
-          <%= feed_item.message %>
+          <%= feed_item.message.html_safe %>
         </div>
       </article>
     </div>
