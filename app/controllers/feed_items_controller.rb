@@ -49,4 +49,5 @@ class FeedItemsController < ApplicationController
     @feed_item.message = "#{user} just deployed a new version of <a href='#{url}'>#{app}</a>"
     @feed_item.save
   end
+
 end
